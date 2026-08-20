@@ -108,6 +108,7 @@
   h2 strong { font-weight: 700; }
   .lede { font-size: clamp(18px, 1.7vw, 24px); color: var(--mut); max-width: 720px; margin: 0 0 36px; line-height: 1.5; }
 
+  .try { display: flex; flex-wrap: wrap; gap: 12px; }
   .try a {
     display: inline-flex;
     align-items: center;
@@ -121,6 +122,18 @@
     background: var(--card);
   }
   .try a:hover { border-color: var(--faint); }
+  .try a.primary {
+    background: var(--fg);
+    color: #fff;
+    border-color: var(--fg);
+  }
+  .try a.primary:hover { opacity: 0.85; border-color: var(--fg); }
+  .try-note {
+    margin: 10px 0 0;
+    font-size: 13px;
+    color: var(--mut);
+    line-height: 1.5;
+  }
 
   /* Feature panel */
   .panel {
@@ -217,8 +230,10 @@
       <h1>Flow</h1>
       <p class="lede">A Mac app for product builders and vibe coders, to stay in the flow.</p>
       <div class="try">
+        <a class="primary" href="https://github.com/AaronRutley/flow/releases/latest" target="_blank" rel="noopener">Download for Mac</a>
         <a href="https://github.com/AaronRutley/flow" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" style="width:17px;height:17px;flex-shrink:0"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>github.com/AaronRutley/flow</a>
       </div>
+      <p class="try-note">Apple Silicon, free. Grab the .dmg, drag Flow to Applications. First launch: macOS warns because the build is not notarized yet. Allow it under System Settings &rarr; Privacy &amp; Security &rarr; Open Anyway.</p>
     </div>
     <div class="gallery">
       <div class="frames">
